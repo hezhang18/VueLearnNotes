@@ -85,7 +85,7 @@
     const app = new Vue({
       el:"#app",//用于挂载要管理的元素
       data:{//定义数据
-        message:"你好啊",
+        message:"电影列表",
         movies:["星际穿越","海王","大话西游","复仇者联盟"]//定义一个数组
       }
     })
@@ -123,8 +123,10 @@
 <body>
   <div id="app">
       <h2>当前计数：{{count}}</h2>
-      <!-- <button v-on:click="count--">-</button>
-      <button v-on:click="count++">+</button> -->
+      <!-- 
+      <button v-on:click="count--">-</button>
+      <button v-on:click="count++">+</button> 
+      -->
       <button v-on:click="sub()">-</button>
       <button @click="add()">+</button>
   </div>
